@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,15 +25,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -54,7 +45,7 @@ class DefaultFirebaseOptions {
     appId: '1:355691089443:android:0f7291e234b968ed656b96',
     messagingSenderId: '355691089443',
     projectId: 'chattt-cc072',
-    storageBucket: 'chattt-cc072.appspot.com',
+    storageBucket: 'chattt-cc072.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
@@ -62,7 +53,37 @@ class DefaultFirebaseOptions {
     appId: '1:355691089443:ios:df13239a420b5800656b96',
     messagingSenderId: '355691089443',
     projectId: 'chattt-cc072',
-    storageBucket: 'chattt-cc072.appspot.com',
+    storageBucket: 'chattt-cc072.firebasestorage.app',
     iosBundleId: 'com.example.chatapp',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyAzvwC6RFOvTq4XOFlIiqP0ujNNun58ZRI',
+    appId: '1:355691089443:web:3abe752d911ed774656b96',
+    messagingSenderId: '355691089443',
+    projectId: 'chattt-cc072',
+    authDomain: 'chattt-cc072.firebaseapp.com',
+    storageBucket: 'chattt-cc072.firebasestorage.app',
+    measurementId: 'G-VKHXPPMP7F',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyArbsiPcXJ-tM3-L-svMtD3I44gAGBx3zc',
+    appId: '1:355691089443:ios:df13239a420b5800656b96',
+    messagingSenderId: '355691089443',
+    projectId: 'chattt-cc072',
+    storageBucket: 'chattt-cc072.firebasestorage.app',
+    iosBundleId: 'com.example.chatapp',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyAzvwC6RFOvTq4XOFlIiqP0ujNNun58ZRI',
+    appId: '1:355691089443:web:51c23b69f19f588d656b96',
+    messagingSenderId: '355691089443',
+    projectId: 'chattt-cc072',
+    authDomain: 'chattt-cc072.firebaseapp.com',
+    storageBucket: 'chattt-cc072.firebasestorage.app',
+    measurementId: 'G-QDD8458614',
+  );
+
 }
