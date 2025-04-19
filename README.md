@@ -1,16 +1,15 @@
-# chatapp
+# Chime
 
-A new Flutter project.
+**Chime** is a real-time chat application built using **Flutter** and **Firebase**, designed to offer seamless and intuitive messaging across platforms. Leveraging Firebase's powerful backend services—such as Firestore for database management, Firebase Authentication for secure login, and Cloud Functions for backend logic—Chime ensures fast, secure, and scalable communication.
 
-## Getting Started
+## Key features include:
+- **Real-time messaging** with instant updates  
+- **User authentication** (email/password, Google Sign-In)  
+- **Profile customization** with avatars  
+- **Responsive UI** for Android, iOS, and Web  
+- **Cross-platform support** with a single codebase  
 
-This project is a starting point for a Flutter application.
+Chime is designed with a clean and modern interface, focusing on user experience while showcasing effective integration of Flutter and Firebase in a production-level application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🌐 Live Demo
+Check out the web version here: [Chime Web App](https://chime-two.vercel.app/)
