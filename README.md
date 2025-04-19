@@ -5,7 +5,6 @@
 ## Key features include:
 - **Real-time messaging** with instant updates  
 - **User authentication** (email/password, Google Sign-In)  
-- **Profile customization** with avatars  
 - **Responsive UI** for Android, iOS, and Web  
 - **Cross-platform support** with a single codebase  
 
